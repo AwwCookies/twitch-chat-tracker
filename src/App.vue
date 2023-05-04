@@ -4,7 +4,7 @@
     <template v-if="invalidPath">
       <div>
         <h1>Enter a channel and username in the URL</h1>
-        <p>Example: <a href="/channel/username">/twitch/username</a></p>
+        <p>Example: <a href="/xqc/xqc">/channel/username</a></p>
       </div>
     </template>
 
