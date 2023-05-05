@@ -91,11 +91,12 @@ ol {
   padding: 0;
   margin: 0;
   max-height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 li:nth-child(even) {
   background-color: #313131;
+  margin-top: 15px;
 }
 
 #messages {
