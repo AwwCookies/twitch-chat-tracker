@@ -18,7 +18,7 @@
         <h2>Messages</h2>
         <ol>
           <li v-for="(message, index) in getMessages" :key="index">
-            {{ message.ts }}: {{ message.text }}
+            {{ moment(message.ts).calendar() }}: {{ message.text }}
           </li>
         </ol>
       </div>
@@ -35,6 +35,7 @@
 import { ref, computed, onMounted } from 'vue'
 import { useTitle } from '@vueuse/core'
 import tmi from 'tmi.js'
+import moment from 'moment'
 
 const channel = ref(window.location.pathname.split('/')[1])
 const username = ref(window.location.pathname.split('/')[2])
@@ -80,6 +81,10 @@ const invalidPath = computed(() => window.location.pathname.split('/').length !=
 </script>
 
 <style scoped>
+
+li {
+  font-size: 20px;
+}
 
 ol {
   list-style-type: none;

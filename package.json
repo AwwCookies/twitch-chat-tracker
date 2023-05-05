@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.1.2",
+    "moment": "^2.29.4",
     "tmi.js": "^1.8.5",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
